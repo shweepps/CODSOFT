@@ -1,7 +1,13 @@
+html{
+    background-image: url("../images/coding.jpeg");
+   
+    background-blend-mode:difference; 
+}
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
+    background-color: #ffffff;
+    margin: 100px auto 100px;
+    width: 550px;
     min-width: 375px;
     padding: 0;
 }
@@ -9,8 +15,8 @@ body {
 .container {
     max-width: 600px;
     min-width: 355px;
-    margin: 0 auto;
-    background-color: #fff;
+    margin: 0 auto 0;
+    background-color: #e2acac;
     padding: 20px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
@@ -70,7 +76,7 @@ li {
 }
 
 li > div {
-    width: 125px;
+    width: 360px;
     grid-column: 1; /* Place the task in the first column */
 }
 
