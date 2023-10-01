@@ -58,8 +58,6 @@ li button {
    background-color: #7183eb;
 }
 
-
-
 ul {
     list-style: none;
     padding: 0;
@@ -95,7 +93,6 @@ li > div:last-child {
 li:hover {
     background-color: #d0d0d0;
 }
-
 
 @keyframes zoomInOut {
     0% {
