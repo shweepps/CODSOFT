@@ -12,6 +12,9 @@ body {
     min-width: 375px;
     padding: 0;
 }
+#taskInput{
+    margin-left: 150px  ;
+}
 
 .container {
     max-width: 600px;
