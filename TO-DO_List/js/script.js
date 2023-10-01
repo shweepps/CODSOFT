@@ -1,16 +1,16 @@
-// Function to retrieve tasks from local storage
+
 function getTasks() {
     const tasksJSON = localStorage.getItem('tasks');
     return JSON.parse(tasksJSON) || [];
 }
 
-// Function to save tasks to local storage
+
 function saveTasks(tasks) {
     const tasksJSON = JSON.stringify(tasks);
     localStorage.setItem('tasks', tasksJSON);
 }
 
-// Function to render tasks
+
 function renderTasks() {
     const taskList = document.getElementById('taskList');
     taskList.innerHTML = '';
@@ -30,7 +30,7 @@ function renderTasks() {
     });
 }
 
-// Function to add a new task
+
 function addTask() {
     const taskInput = document.getElementById('taskInput');
     const newTask = taskInput.value.trim();
@@ -44,7 +44,7 @@ function addTask() {
     }
 }
 
-// Function to edit a task
+
 function editTask(index) {
     const tasks = getTasks();
     const updatedTask = prompt('Edit the task:', tasks[index]);
@@ -56,7 +56,7 @@ function editTask(index) {
     }
 }
 
-// Function to delete a task
+
 function deleteTask(index) {
     const tasks = getTasks();
     tasks.splice(index, 1);
@@ -64,5 +64,5 @@ function deleteTask(index) {
     renderTasks();
 }
 
-// Initial rendering of tasks
+
 renderTasks();

@@ -56,19 +56,18 @@ li button {
 
 
 
-/* Add a grid layout for the task list items and buttons */
 ul {
     list-style: none;
     padding: 0;
     min-width: 355px;
     display: grid;
-    grid-template-columns: 1fr; /* Two columns: task, buttons */
+    grid-template-columns: 1fr; 
     gap: 5px;
 }
 
 li {
     display: grid;
-    grid-template-columns: 1fr 50px; /* Two columns: task, buttons */
+    grid-template-columns: 1fr 50px; 
     align-items: center;
     padding: 5px 10px;
     min-width: 375px;
@@ -77,37 +76,35 @@ li {
 
 li > div {
     width: 360px;
-    grid-column: 1; /* Place the task in the first column */
+    grid-column: 1; 
 }
 
 li > div:last-child {
-    grid-column: 2; /* Place the edit and delete buttons in the second column */
+    grid-column: 2; 
     display: flex;
     width: 50px;
     gap: 5px;
-    justify-content: flex-end; /* Align buttons to the right */
+    justify-content: flex-end; 
 }
 
 
-/* Add a hover effect */
 li:hover {
     background-color: #d0d0d0;
 }
 
-/* Add a keyframe animation for zoom-in and out */
+
 @keyframes zoomInOut {
     0% {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.1); /* Zoom in to 110% size */
+        transform: scale(1.1); 
     }
     100% {
         transform: scale(1);
     }
 }
 
-/* Apply the animation to the edit and delete buttons */
 li > div:last-child button{
     background-color: #ff0000;
     color: #fff;
@@ -115,11 +112,10 @@ li > div:last-child button{
     padding: 5px 10px;
     cursor: pointer;
     margin-left: 5px;
-    animation: none; /* Apply the zoomInOut animation */
+    animation: none; 
 }
 
-/* Add a hover effect for the buttons */
 li > div:last-child button:hover {
-    animation: zoomInOut 0.3s ease; /* Disable the animation on hover */
+    animation: zoomInOut 0.3s ease; 
 }
 
