@@ -1,4 +1,7 @@
 
+const taskInput = document.getElementById('taskInput');
+taskInput.addEventListener('keydown', handleEnterKeyPress);
+
 function getTasks() {
     const tasksJSON = localStorage.getItem('tasks');
     return JSON.parse(tasksJSON) || [];
@@ -40,6 +43,14 @@ function addTask() {
         renderTasks();
     }
 }
+
+
+function handleEnterKeyPress(event) {
+    if (event.key === "Enter") {
+        addTask();
+    }
+}
+
 
 function editTask(index) {
     const tasks = getTasks();
